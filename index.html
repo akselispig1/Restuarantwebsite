@@ -193,7 +193,12 @@ a.u:hover{color:var(--brand-2)}
 .menu__notes div:nth-child(1){grid-column:1/6}
 .menu__notes div:nth-child(2){grid-column:6/10}
 .menu__notes div:nth-child(3){grid-column:10/13}
-@media (max-width:860px){.menu__notes div{grid-column:1/13 !important}}
+@media (max-width:860px){
+  /* one column on small screens: the 12-track grid and its gaps are not needed,
+     and this rule must come after .menu__notes to win the cascade */
+  .menu__notes{grid-template-columns:1fr;column-gap:0}
+  .menu__notes div{grid-column:auto !important}
+}
 
 /* ---------- card panel ---------- */
 .card{background:var(--brand);color:var(--on-brand)}
