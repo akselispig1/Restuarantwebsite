@@ -11,8 +11,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
 
+<style>
+.demobar{background:#18181B;font:500 12px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.demobar__in{max-width:1120px;margin-inline:auto;padding:5px 20px;display:flex;align-items:center;
+  gap:4px;flex-wrap:wrap;min-height:40px}
+.demobar__lbl{letter-spacing:.15em;text-transform:uppercase;color:#71717A;margin-right:12px}
+.demobar a{display:inline-flex;align-items:center;min-height:30px;padding:0 13px;color:#D4D4D8;
+  text-decoration:none;border:1px solid transparent;transition:color .15s ease,border-color .15s ease}
+.demobar a:hover{color:#FFFFFF;border-color:#3F3F46}
+.demobar a[aria-current="page"]{background:#FAFAFA;color:#18181B;font-weight:600}
+.demobar a:focus-visible{outline:2px solid #FAFAFA;outline-offset:1px}
+</style>
 </head>
 <body>
+<div class="demobar"><div class="demobar__in"><span class="demobar__lbl">Demo</span><a href="./" aria-current="page">Restaurant</a><a href="barber.html">Barbier</a></div></div>
 <style>
 /* Hollis — Bridge Street. Libre Caslon Text / Archivo. */
 
